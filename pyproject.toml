@@ -4,10 +4,10 @@ name = "cookiecutter-pypackage"
 version = "1.1.1"
 description = "Cookiecutter template for a Python package"
 license = "BSD-3-Clause"
-authors = ["Xie Wei <ampedee@gmail.com>"]
+authors = ["Adam Vandergriff <adam.vandergriff@gmail.com>"]
 readme = "README.md"
-repository = "https://github.com/waynerv/cookiecutter-pypackage"
-documentation = "https://waynerv.github.io/cookiecutter-pypackage/"
+repository = "https://github.com/acvander/cookiecutter-pypackage"
+documentation = "https://acvander.github.io/cookiecutter-pypackage/"
 keywords = ['cookiecutter', 'template', 'package']
 
 include = [
@@ -17,12 +17,11 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.6.*"
+python = ">=3.9,<4"
 cookiecutter = "1.7.2"
 
 pytest = {version = "^6.2.3", optional=true}
 pytest-cookies = {version = "^0.6.1", optional=true}
-pyyaml = {version="^5.3.1",optional=true}
 mkdocs = {version="^1.1.2",optional=true}
 mkdocs-material = {version="^6.1.7",optional=true}
 mkdocs-material-extensions = {version="^1.0.1",optional=true}
@@ -35,7 +34,6 @@ click = {version = "^8.0.1", optional = true}
 dev = [
   "pytest",
   "pytest-cookies",
-  "pyyaml",
   "mkdocs",
   "mkdocs-material",
   "mkdocs-material-extensions",
